@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Pizza Shop</title>
+<meta name="keywords" content="DeathGhost,DeathGhost.cn,web前端设,移动WebApp开发" />
+<meta name="description" content="DeathGhost.cn::H5 WEB前端设计开发!" />
+<meta name="author" content="DeathGhost"/>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jqpublic.js"></script>
+<script>
+$(function(){		
+	$('.title-list li').click(function(){
+		var liindex = $('.title-list li').index(this);
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.menutab-wrap div.menutab').eq(liindex).fadeIn(150).siblings('div.menutab').hide();
+		var liWidth = $('.title-list li').width();
+		$('.shopcontent .title-list p').stop(false,true).animate({'left' : liindex * liWidth + 'px'},300);
+	});
+	
+	$('.menutab-wrap .menutab li').hover(function(){
+		$(this).css("border-color","#FF0000");
+		$(this).find('p > a').css('color','#ff6600');
+	},function(){
+		$(this).css("border-color","#fafafa");
+		$(this).find('p > a').css('color','#666666');
+	});
+	});
+</script>
+</head>
+<body>
+<header>
+ <section class="Topmenubg">
+  <div class="Topnav">
+   <div class="LeftNav">
+    <a href="register.html">Register</a>/<a href="login.html">Log in</a><a href="#">Online customer service</a><a href="#">Manual customer service</a><a href="#">Mobile client</a>
+   </div>
+   <div class="RightNav">
+    <a href="user_center.html">User center</a> <a href="user_orderlist.html" target="_blank" title="My order">My order</a> <a href="cart.html">Shopping cart（0）</a> <a href="user_favorites.html" target="_blank" title="我的收藏">My collection</a> <a href="#">Merchant settlement</a>
+   </div>
+  </div>
+ </section>
+ <div class="Logo_search">
+  <div class="Logo">
+   <img src="upload/brands_01.jpg" title="DeathGhost" alt="模板">
+   <i></i>
+   <span>London [ <a href="#">AAA</a> ]</span>
+  </div>
+  <div class="Search"> 
+   <form method="get" id="main_a_serach" onsubmit="return check_search(this)">
+   <div class="Search_nav" id="selectsearch">
+    <a href="javascript:;" onClick="selectsearch(this,'restaurant_name')" class="choose">Restaurant</a>
+    <a href="javascript:;" onClick="selectsearch(this,'food_name')">items</a>
+   </div>
+   <div class="Search_area"> 
+   <input type="search" id="fkeyword" name="keyword" placeholder="Please enter the name of the restaurant or food you want to find..." class="searchbox" />
+   <input type="submit" class="searchbutton" value="Search" />
+   </div>
+   </form>
+   <p class="hotkeywords"><a href="#" title="这里是产品名称">Pizza</a><a href="#" title="这里是产品名称">Pizza</a><a href="#" title="这里是产品名称">Pizza</a><a href="#" title="这里是产品名称">Pizza</a><a href="#" title="这里是产品名称">Pizza</a><a href="#" title="这里是产品名称">Pizza</a></p>
+  </div>
+ </div>
+ <nav class="menu_bg">
+  <ul class="menu">
+   <li><a href="index.html">Home page</a></li>
+   <li><a href="list.html">Table reservation</a></li>
+   <li><a href="category.html">Points mall</a></li>
+   <li><a href="article_read.html">About us</a></li>
+  </ul>
+ </nav>
+</header>
+<!--Start content-->
+<section class="slp">
+    <section class="food-hd">
+     <div class="foodpic">
+      <img src="upload/02.jpg" id="showimg">
+       <ul class="smallpic">
+        <li><img src="upload/02.jpg" onmouseover="show(this)" onmouseout="hide()"></li>
+       </ul>
+     </div>
+     <div class="foodtext">
+      <div class="foodname_a">
+       <h1>Pizzaxxx</h1>
+       <p>addressxxx</p>
+      </div>
+      <div class="price_a">
+       <p class="price01">Promotion：￥<span>59.00</span></p>
+       <p class="price02">Price：￥<s>69.00</s></p>
+      </div>
+      <div class="Freight">
+       <span>Distribution cost：</span>
+       <span><i>area</i>to<i>area</i></span>
+       <span>10.00</span>
+      </div>
+      <ul class="Tran_infor">
+        <li>
+         <p class="Numerical">3</p>
+         <p>Monthly sales</p>
+        </li>
+        <li class="line">
+         <p class="Numerical">58</p>
+         <p>Cumulative evaluation</p>
+        </li>
+        <li>
+         <p class="Numerical">59</p>
+         <p>Integral</p>
+        </li>
+      </ul>
+      <form action="cart.html">
+      <div class="BuyNo">
+       <span>Ingredients：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+       <span>Inventory：3258</span>
+       <div class="Buybutton">
+       </div>
+      </div>
+    </ul>
+    <form action="cart.html">
+    <div class="BuyNo">
+     <span>Ingredients：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+     <span>Inventory：3258</span>
+     <div class="Buybutton">
+     </div>
+    </div>
+    </ul>
+      <form action="cart.html">
+      <div class="BuyNo">
+       <span>Ingredients：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+       <span>Inventory：3258</span>
+       <div class="Buybutton">
+       </div>
+      </div>
+    </ul>
+    <form action="cart.html">
+    <div class="BuyNo">
+     <span>Ingredients：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+     <span>Inventory：3258</span>
+     <div class="Buybutton">
+     </div>
+    </div>
+    </ul>
+      <form action="cart.html">
+      <div class="BuyNo">
+       <span>Ingredients：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+       <span>Inventory：3258</span>
+       <div class="Buybutton">
+       </div>
+      </div>
+    </ul>
+    <form action="cart.html">
+    <div class="BuyNo">
+     <span>Ingredients：<input type="number" name="Number" required autofocus min="1" value="1"/>份</span>
+     <span>Inventory：3258</span>
+     <div class="Buybutton">
+    <input name="" type="submit" value="Add to shopping cart" class="BuyB">
+     </div>
+    </div>
+
+     </div>
+
+</body>
+</html>
