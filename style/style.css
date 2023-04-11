@@ -358,7 +358,8 @@ code::selection {background:#dddddd;}
 .Register input{border:1px #dddddd solid;padding:10px 8px;}
 .Register input.Submit_b{border:1px #999 solid;background:#f1f1f1;margin-right:8px; cursor:pointer;}
 /*login*/
-.login{width:1200px;}
+.login{width: 50%;}
+.login .divcustomer{width: 50%;position: relative;float: left;background-color: #00661c;}
 .login tr{height:45px;}
 .login input{border:1px #dddddd solid;padding:10px 8px;}
 .login input.Submit_b{border:1px #999 solid;background:#f1f1f1;margin-right:8px; cursor:pointer;}
@@ -391,12 +392,12 @@ code::selection {background:#dddddd;}
 .Shop-index aside .Nearshop li p span.shopname{font-weight:bold;}
 .Shop-index aside .Nearshop li p span.Discolor{color:#01ac42;}
 /*shop product/service Details page*/
-.slp{width:1200px; margin:50px auto; overflow:hidden; clear:both;}
+.slp{width:1200px; margin:20px auto; overflow:hidden; clear:both;}
 .slp .food-hd{padding:5px;width:1188px;border:1px #dddddd solid;overflow:hidden;height:772px;}
 .slp .food-hd .foodpic{width:425px;height:auto; float:left;}
 .slp .food-hd .foodpic img{width:425px;height:302px;}
 .slp .food-hd .foodpic ul{width:496px;height:auto;margin:8px 0;}
-.slp .food-hd .foodpic li{width:78px;height:555px;float:left;margin:0 8px 0 0;}
+.slp .food-hd .foodpic li{width:78px;height:55px;float:left;margin:0 8px 0 0;}
 .slp .food-hd .foodpic li img{width:78px;height:55px;}
 .slp .food-hd .foodtext{width:558px;height:302px;float:left;margin:0 10px;font-size:13px;}
 .slp .food-hd .foodtext .foodname_a{padding:0;line-height:25px;border-bottom:1px #dddddd dotted;}
